@@ -4,21 +4,6 @@
 - Modify XML data
 - Pack `.xml` → `.pkt`
 
-## Build
-
-### Linux
-
-```bash
-chmod +x build-linux.sh
-./build-linux.sh
-```
-
-### Windows (UCRT64)
-```bash
-chmod +x build-ucrt64.sh
-./build-ucrt64.sh
-```
-
 ## Download
 <table>
   <tr>
@@ -38,6 +23,20 @@ chmod +x build-ucrt64.sh
   </tr>
 </table>
 
+## Build
+
+### Linux
+
+```bash
+chmod +x build-linux.sh
+./build-linux.sh
+```
+
+### Windows (UCRT64)
+```bash
+chmod +x build-ucrt64.sh
+./build-ucrt64.sh
+```
 
 ## Usage
 ```bash
@@ -60,7 +59,7 @@ Options:
 
 - Cisco Packet Tracer 8.2.2 and 9.0.0 on Windows 10 (x64)
 
-## Referrence
+## Reference
 
 - libTomCrypt manual: https://www.co.tt/files/libTomCryptDoc.pdf
 - zlib manual: https://www.zlib.net/manual.html
