@@ -21,6 +21,9 @@ The following steps describe the observed decryption pipeline derived from rever
    - Method: `Z_DEFAULT_COMPRESSION`  
    - Output: `decrypted.xml`
 
+## Tested Environment
+
+- Cisco Packet Tracer 8.2.2 and 9.0.0
 
 ## Features
 
