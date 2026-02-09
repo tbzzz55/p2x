@@ -1,4 +1,6 @@
-![:p2x](https://count.getloli.com/@:p2x?name=%3Ap2x&theme=booru-lewd&padding=7&offset=0&align=center&scale=1&pixelated=1&darkmode=auto)
+<p align="center">
+  <img src="https://count.getloli.com/@:p2x?name=%3Ap2x&theme=booru-lewd&padding=7&offset=0&align=center&scale=1&pixelated=1&darkmode=auto" alt=":name" />
+</p>
 ## Features
 
 - Unpack `.pkt` → `.xml`
