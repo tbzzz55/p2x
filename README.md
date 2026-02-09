@@ -1,3 +1,4 @@
+![:p2x](https://count.getloli.com/@:p2x?name=%3Ap2x&theme=booru-lewd&padding=7&offset=0&align=center&scale=1&pixelated=1&darkmode=auto)
 ## Features
 
 - Unpack `.pkt` → `.xml`
