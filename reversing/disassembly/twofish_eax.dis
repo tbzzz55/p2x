@@ -33,12 +33,12 @@
 00007FF7F30323E5 | 48:8D8D D0000000         | lea rcx,qword ptr ss:[rbp+0xD0]                                                                  |
 00007FF7F30323EC | E8 5FA096FD              | call packettracer.7FF7F099C450                                                                   |
 00007FF7F30323F1 | 90                       | nop                                                                                              |
-00007FF7F30323F2 | 48:C74424 20 10000000    | mov qword ptr ss:[rsp+0x20],0x10                                                                 |
-00007FF7F30323FB | 4C:8BCB                  | mov r9,rbx                                                                                       |
-00007FF7F30323FE | 44:8D46 10               | lea r8d,qword ptr ds:[rsi+0x10]                                                                  |
-00007FF7F3032402 | 48:8BD7                  | mov rdx,rdi                                                                                      |
+00007FF7F30323F2 | 48:C74424 20 10000000    | mov qword ptr ss:[rsp+0x20],0x10                                                                 | iv length
+00007FF7F30323FB | 4C:8BCB                  | mov r9,rbx                                                                                       | iv
+00007FF7F30323FE | 44:8D46 10               | lea r8d,qword ptr ds:[rsi+0x10]                                                                  | key length
+00007FF7F3032402 | 48:8BD7                  | mov rdx,rdi                                                                                      | key
 00007FF7F3032405 | 48:8D4D E0               | lea rcx,qword ptr ss:[rbp-0x20]                                                                  |
-00007FF7F3032409 | E8 FB7396FD              | call packettracer.7FF7F0999809                                                                   |
+00007FF7F3032409 | E8 FB7396FD              | call packettracer.7FF7F0999809                                                                   | SetKeyWithIV
 00007FF7F303240E | B9 40020000              | mov ecx,0x240                                                                                    |
 00007FF7F3032413 | E8 7C2591FD              | call packettracer.7FF7F0944994                                                                   |
 00007FF7F3032418 | 48:8BF8                  | mov rdi,rax                                                                                      |
@@ -145,4 +145,5 @@
 00007FF7F30325BD | 5E                       | pop rsi                                                                                          |
 00007FF7F30325BE | 5B                       | pop rbx                                                                                          |
 00007FF7F30325BF | 5D                       | pop rbp                                                                                          |
+
 00007FF7F30325C0 | C3                       | ret                                                                                              |
