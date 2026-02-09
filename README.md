@@ -1,3 +1,9 @@
+## Features
+
+- Unpack `.pkt` → `.xml`
+- Modify XML data
+- Pack `.xml` → `.pkt`
+
 ## Build
 
 ### Linux
@@ -7,7 +13,7 @@ chmod +x linux_build.sh
 ./build-linux.sh
 ```
 
-### Windows (MSYS UCRT64)
+### Windows (UCRT64)
 ```bash
 chmod +x build-ucrt64.sh
 ./build-ucrt64.sh
