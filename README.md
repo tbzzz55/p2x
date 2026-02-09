@@ -65,4 +65,6 @@ Options:
 
 ## Referrence
 
-- https://www.cisco.com/c/dam/en_us/about/doing_business/open_source/docs/CiscoPacketTracer-90-1758829197.pdf
+- Open Source Used In Cisco Packet Tracer 9.0: https://www.cisco.com/c/dam/en_us/about/doing_business/open_source/docs/CiscoPacketTracer-90-1758829197.pdf
+- libTomCrypt manual: https://www.co.tt/files/libTomCryptDoc.pdf
+- zlib manual: https://www.zlib.net/manual.html
