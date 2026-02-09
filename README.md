@@ -36,7 +36,7 @@ The following steps describe the observed decryption pipeline derived from rever
 ### Linux
 
 ```bash
-chmod +x linux_build.sh
+chmod +x build-linux.sh
 ./build-linux.sh
 ```
 
