@@ -59,6 +59,10 @@ Options:
 ./p2x -u -i example.pkt -o example.xml
 ./p2x -p -i example.xml -o example.pkt
 ```
-## Tested Environment
+## Tested
 
 - Cisco Packet Tracer 8.2.2 and 9.0.0
+
+## Referrence
+
+- https://www.cisco.com/c/dam/en_us/about/doing_business/open_source/docs/CiscoPacketTracer-90-1758829197.pdf
