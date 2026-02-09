@@ -1,0 +1,148 @@
+00007FF7F3032360 | 40:55                    | push rbp                                                                                         |
+00007FF7F3032362 | 53                       | push rbx                                                                                         |
+00007FF7F3032363 | 56                       | push rsi                                                                                         |
+00007FF7F3032364 | 57                       | push rdi                                                                                         |
+00007FF7F3032365 | 41:56                    | push r14                                                                                         |
+00007FF7F3032367 | 41:57                    | push r15                                                                                         |
+00007FF7F3032369 | 48:8DAC24 E8EDFFFF       | lea rbp,qword ptr ss:[rsp-0x1218]                                                                |
+00007FF7F3032371 | B8 18130000              | mov eax,0x1318                                                                                   |
+00007FF7F3032376 | E8 0CE791FD              | call packettracer.7FF7F0950A87                                                                   |
+00007FF7F303237B | 48:2BE0                  | sub rsp,rax                                                                                      |
+00007FF7F303237E | 48:8B05 EB617E02         | mov rax,qword ptr ds:[0x7FF7F5818570]                                                            |
+00007FF7F3032385 | 48:33C4                  | xor rax,rsp                                                                                      |
+00007FF7F3032388 | 48:8985 08120000         | mov qword ptr ss:[rbp+0x1208],rax                                                                |
+00007FF7F303238F | 49:8BD9                  | mov rbx,r9                                                                                       |
+00007FF7F3032392 | 49:8BF8                  | mov rdi,r8                                                                                       |
+00007FF7F3032395 | 4C:8BFA                  | mov r15,rdx                                                                                      | input buffer
+00007FF7F3032398 | 4C:8BF1                  | mov r14,rcx                                                                                      |
+00007FF7F303239B | 48:894C24 38             | mov qword ptr ss:[rsp+0x38],rcx                                                                  |
+00007FF7F30323A0 | 33F6                     | xor esi,esi                                                                                      |
+00007FF7F30323A2 | 48:897424 48             | mov qword ptr ss:[rsp+0x48],rsi                                                                  |
+00007FF7F30323A7 | 48:897424 58             | mov qword ptr ss:[rsp+0x58],rsi                                                                  |
+00007FF7F30323AC | 48:C74424 60 0F000000    | mov qword ptr ss:[rsp+0x60],0xF                                                                  |
+00007FF7F30323B5 | 40:887424 48             | mov byte ptr ss:[rsp+0x48],sil                                                                   |
+00007FF7F30323BA | 48:8D4D E0               | lea rcx,qword ptr ss:[rbp-0x20]                                                                  |
+00007FF7F30323BE | E8 039F95FD              | call packettracer.7FF7F098C2C6                                                                   |
+00007FF7F30323C3 | 90                       | nop                                                                                              |
+00007FF7F30323C4 | 48:8D05 D5C59201         | lea rax,qword ptr ds:[0x7FF7F495E9A0]                                                            |
+00007FF7F30323CB | 48:8945 E0               | mov qword ptr ss:[rbp-0x20],rax                                                                  |
+00007FF7F30323CF | 48:8D05 0AC79201         | lea rax,qword ptr ds:[0x7FF7F495EAE0]                                                            |
+00007FF7F30323D6 | 48:8945 E8               | mov qword ptr ss:[rbp-0x18],rax                                                                  |
+00007FF7F30323DA | 48:8D05 BFC79201         | lea rax,qword ptr ds:[0x7FF7F495EBA0]                                                            |
+00007FF7F30323E1 | 48:8945 F0               | mov qword ptr ss:[rbp-0x10],rax                                                                  |
+00007FF7F30323E5 | 48:8D8D D0000000         | lea rcx,qword ptr ss:[rbp+0xD0]                                                                  |
+00007FF7F30323EC | E8 5FA096FD              | call packettracer.7FF7F099C450                                                                   |
+00007FF7F30323F1 | 90                       | nop                                                                                              |
+00007FF7F30323F2 | 48:C74424 20 10000000    | mov qword ptr ss:[rsp+0x20],0x10                                                                 |
+00007FF7F30323FB | 4C:8BCB                  | mov r9,rbx                                                                                       |
+00007FF7F30323FE | 44:8D46 10               | lea r8d,qword ptr ds:[rsi+0x10]                                                                  |
+00007FF7F3032402 | 48:8BD7                  | mov rdx,rdi                                                                                      |
+00007FF7F3032405 | 48:8D4D E0               | lea rcx,qword ptr ss:[rbp-0x20]                                                                  |
+00007FF7F3032409 | E8 FB7396FD              | call packettracer.7FF7F0999809                                                                   |
+00007FF7F303240E | B9 40020000              | mov ecx,0x240                                                                                    |
+00007FF7F3032413 | E8 7C2591FD              | call packettracer.7FF7F0944994                                                                   |
+00007FF7F3032418 | 48:8BF8                  | mov rdi,rax                                                                                      |
+00007FF7F303241B | 48:894424 38             | mov qword ptr ss:[rsp+0x38],rax                                                                  |
+00007FF7F3032420 | 48:85C0                  | test rax,rax                                                                                     |
+00007FF7F3032423 | 74 6A                    | je packettracer.7FF7F303248F                                                                     |
+00007FF7F3032425 | 8D4E 20                  | lea ecx,qword ptr ds:[rsi+0x20]                                                                  |
+00007FF7F3032428 | E8 672591FD              | call packettracer.7FF7F0944994                                                                   |
+00007FF7F303242D | 48:8BD8                  | mov rbx,rax                                                                                      |
+00007FF7F3032430 | 48:894424 40             | mov qword ptr ss:[rsp+0x40],rax                                                                  |
+00007FF7F3032435 | 48:85C0                  | test rax,rax                                                                                     |
+00007FF7F3032438 | 74 2A                    | je packettracer.7FF7F3032464                                                                     |
+00007FF7F303243A | 33D2                     | xor edx,edx                                                                                      |
+00007FF7F303243C | 48:8BC8                  | mov rcx,rax                                                                                      |
+00007FF7F303243F | E8 BCDF92FD              | call packettracer.7FF7F0960400                                                                   |
+00007FF7F3032444 | 48:8D05 35338B01         | lea rax,qword ptr ds:[0x7FF7F48E5780]                                                            |
+00007FF7F303244B | 48:8903                  | mov qword ptr ds:[rbx],rax                                                                       |
+00007FF7F303244E | 48:8D05 EB348B01         | lea rax,qword ptr ds:[0x7FF7F48E5940]                                                            |
+00007FF7F3032455 | 48:8943 08               | mov qword ptr ds:[rbx+0x8],rax                                                                   |
+00007FF7F3032459 | 48:8D4424 48             | lea rax,qword ptr ss:[rsp+0x48]                                                                  |
+00007FF7F303245E | 48:8943 18               | mov qword ptr ds:[rbx+0x18],rax                                                                  |
+00007FF7F3032462 | EB 03                    | jmp packettracer.7FF7F3032467                                                                    |
+00007FF7F3032464 | 48:8BDE                  | mov rbx,rsi                                                                                      |
+00007FF7F3032467 | C74424 28 05000000       | mov dword ptr ss:[rsp+0x28],0x5                                                                  | padding
+00007FF7F303246F | C74424 20 FFFFFFFF       | mov dword ptr ss:[rsp+0x20],0xFFFFFFFF                                                           | truncatedDigestSize
+00007FF7F3032477 | 41:B9 10000000           | mov r9d,0x10                                                                                     | flags
+00007FF7F303247D | 4C:8BC3                  | mov r8,rbx                                                                                       | attachment
+00007FF7F3032480 | 48:8D55 E0               | lea rdx,qword ptr ss:[rbp-0x20]                                                                  | cipher
+00007FF7F3032484 | 48:8BCF                  | mov rcx,rdi                                                                                      | this
+00007FF7F3032487 | E8 F67895FD              | call packettracer.7FF7F0989D82                                                                   | CryptoPP::AuthenticatedDecryptionFilter
+00007FF7F303248C | 48:8BF0                  | mov rsi,rax                                                                                      |
+00007FF7F303248F | 49:8B07                  | mov rax,qword ptr ds:[r15]                                                                       |
+00007FF7F3032492 | 48:6358 04               | movsxd rbx,dword ptr ds:[rax+0x4]                                                                |
+00007FF7F3032496 | 49:8BCF                  | mov rcx,r15                                                                                      |
+00007FF7F3032499 | FF15 A975A502            | call qword ptr ds:[<public: char const * __cdecl QByteArray::constData(void) const>]             |
+00007FF7F303249F | 48:897424 20             | mov qword ptr ss:[rsp+0x20],rsi                                                                  |
+00007FF7F30324A4 | 41:B1 01                 | mov r9b,0x1                                                                                      |
+00007FF7F30324A7 | 4C:8BC3                  | mov r8,rbx                                                                                       |
+00007FF7F30324AA | 48:8BD0                  | mov rdx,rax                                                                                      |
+00007FF7F30324AD | 48:8D4C24 70             | lea rcx,qword ptr ss:[rsp+0x70]                                                                  |
+00007FF7F30324B2 | E8 989993FD              | call packettracer.7FF7F096BE4F                                                                   |
+00007FF7F30324B7 | 48:8D05 AA368B01         | lea rax,qword ptr ds:[0x7FF7F48E5B68]                                                            |
+00007FF7F30324BE | 48:894424 70             | mov qword ptr ss:[rsp+0x70],rax                                                                  |
+00007FF7F30324C3 | 48:8D05 9E388B01         | lea rax,qword ptr ds:[0x7FF7F48E5D68]                                                            |
+00007FF7F30324CA | 48:894424 78             | mov qword ptr ss:[rsp+0x78],rax                                                                  |
+00007FF7F30324CF | 48:8D4D 88               | lea rcx,qword ptr ss:[rbp-0x78]                                                                  |
+00007FF7F30324D3 | E8 F2A895FD              | call packettracer.7FF7F098CDCA                                                                   |
+00007FF7F30324D8 | 48:8D5424 48             | lea rdx,qword ptr ss:[rsp+0x48]                                                                  |
+00007FF7F30324DD | 48:837C24 60 10          | cmp qword ptr ss:[rsp+0x60],0x10                                                                 |
+00007FF7F30324E3 | 48:0F435424 48           | cmovae rdx,qword ptr ss:[rsp+0x48]                                                               |
+00007FF7F30324E9 | 44:8B4424 58             | mov r8d,dword ptr ss:[rsp+0x58]                                                                  |
+00007FF7F30324EE | 49:8BCE                  | mov rcx,r14                                                                                      |
+00007FF7F30324F1 | FF15 517EA502            | call qword ptr ds:[<public: __cdecl QByteArray::QByteArray(char const *, int)>]                  |
+00007FF7F30324F7 | 90                       | nop                                                                                              |
+00007FF7F30324F8 | 48:8D8D 10010000         | lea rcx,qword ptr ss:[rbp+0x110]                                                                 |
+00007FF7F30324FF | E8 E52C93FD              | call packettracer.7FF7F09651E9                                                                   |
+00007FF7F3032504 | 90                       | nop                                                                                              |
+00007FF7F3032505 | 48:8B95 F0000000         | mov rdx,qword ptr ss:[rbp+0xF0]                                                                  |
+00007FF7F303250C | 48:3995 E8000000         | cmp qword ptr ss:[rbp+0xE8],rdx                                                                  |
+00007FF7F3032513 | 48:0F4295 E8000000       | cmovb rdx,qword ptr ss:[rbp+0xE8]                                                                |
+00007FF7F303251B | 48:8B9D F8000000         | mov rbx,qword ptr ss:[rbp+0xF8]                                                                  |
+00007FF7F3032522 | 48:8BCB                  | mov rcx,rbx                                                                                      |
+00007FF7F3032525 | E8 E95B94FD              | call packettracer.7FF7F0978113                                                                   |
+00007FF7F303252A | 48:8BCB                  | mov rcx,rbx                                                                                      |
+00007FF7F303252D | E8 1C2397FD              | call packettracer.7FF7F09A484E                                                                   |
+00007FF7F3032532 | 90                       | nop                                                                                              |
+00007FF7F3032533 | 48:8D4D 38               | lea rcx,qword ptr ss:[rbp+0x38]                                                                  |
+00007FF7F3032537 | E8 572D93FD              | call packettracer.7FF7F0965293                                                                   |
+00007FF7F303253C | 90                       | nop                                                                                              |
+00007FF7F303253D | 48:8B55 08               | mov rdx,qword ptr ss:[rbp+0x8]                                                                   |
+00007FF7F3032541 | 48:3955 00               | cmp qword ptr ss:[rbp],rdx                                                                       |
+00007FF7F3032545 | 48:0F4255 00             | cmovb rdx,qword ptr ss:[rbp]                                                                     |
+00007FF7F303254A | 48:8B5D 10               | mov rbx,qword ptr ss:[rbp+0x10]                                                                  |
+00007FF7F303254E | 48:8BCB                  | mov rcx,rbx                                                                                      |
+00007FF7F3032551 | E8 BD5B94FD              | call packettracer.7FF7F0978113                                                                   |
+00007FF7F3032556 | 48:8BCB                  | mov rcx,rbx                                                                                      |
+00007FF7F3032559 | E8 F02297FD              | call packettracer.7FF7F09A484E                                                                   |
+00007FF7F303255E | 90                       | nop                                                                                              |
+00007FF7F303255F | 48:8B5424 60             | mov rdx,qword ptr ss:[rsp+0x60]                                                                  |
+00007FF7F3032564 | 48:83FA 10               | cmp rdx,0x10                                                                                     |
+00007FF7F3032568 | 72 35                    | jb packettracer.7FF7F303259F                                                                     |
+00007FF7F303256A | 48:FFC2                  | inc rdx                                                                                          |
+00007FF7F303256D | 48:8B4C24 48             | mov rcx,qword ptr ss:[rsp+0x48]                                                                  |
+00007FF7F3032572 | 48:8BC1                  | mov rax,rcx                                                                                      |
+00007FF7F3032575 | 48:81FA 00100000         | cmp rdx,0x1000                                                                                   |
+00007FF7F303257C | 72 1C                    | jb packettracer.7FF7F303259A                                                                     |
+00007FF7F303257E | 48:83C2 27               | add rdx,0x27                                                                                     |
+00007FF7F3032582 | 48:8B49 F8               | mov rcx,qword ptr ds:[rcx-0x8]                                                                   |
+00007FF7F3032586 | 48:2BC1                  | sub rax,rcx                                                                                      |
+00007FF7F3032589 | 48:83C0 F8               | add rax,0xFFFFFFFFFFFFFFF8                                                                       |
+00007FF7F303258D | 48:83F8 1F               | cmp rax,0x1F                                                                                     |
+00007FF7F3032591 | 76 07                    | jbe packettracer.7FF7F303259A                                                                    |
+00007FF7F3032593 | FF15 1F0FA602            | call qword ptr ds:[<_invalid_parameter_noinfo_noreturn>]                                         |
+00007FF7F3032599 | CC                       | int3                                                                                             |
+00007FF7F303259A | E8 528195FD              | call packettracer.7FF7F098A6F1                                                                   |
+00007FF7F303259F | 49:8BC6                  | mov rax,r14                                                                                      |
+00007FF7F30325A2 | 48:8B8D 08120000         | mov rcx,qword ptr ss:[rbp+0x1208]                                                                |
+00007FF7F30325A9 | 48:33CC                  | xor rcx,rsp                                                                                      |
+00007FF7F30325AC | E8 AAA093FD              | call packettracer.7FF7F096C65B                                                                   |
+00007FF7F30325B1 | 48:81C4 18130000         | add rsp,0x1318                                                                                   |
+00007FF7F30325B8 | 41:5F                    | pop r15                                                                                          |
+00007FF7F30325BA | 41:5E                    | pop r14                                                                                          |
+00007FF7F30325BC | 5F                       | pop rdi                                                                                          |
+00007FF7F30325BD | 5E                       | pop rsi                                                                                          |
+00007FF7F30325BE | 5B                       | pop rbx                                                                                          |
+00007FF7F30325BF | 5D                       | pop rbp                                                                                          |
+00007FF7F30325C0 | C3                       | ret                                                                                              |

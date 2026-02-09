@@ -1,0 +1,8 @@
+00007FF7F3034E31 | 48:8B45 C8               | mov rax,qword ptr ss:[rbp-0x38]                                                                  |
+00007FF7F3034E35 | 8B58 04                  | mov ebx,dword ptr ds:[rax+0x4]                                                                   |
+00007FF7F3034E38 | 48:8D4D C8               | lea rcx,qword ptr ss:[rbp-0x38]                                                                  |
+00007FF7F3034E3C | FF15 064CA502            | call qword ptr ds:[<public: char const * __cdecl QByteArray::constData(void) const>]             |
+00007FF7F3034E42 | 44:8BC3                  | mov r8d,ebx                                                                                      | size
+00007FF7F3034E45 | 48:8BD0                  | mov rdx,rax                                                                                      | input buffer
+00007FF7F3034E48 | 48:8D4D 38               | lea rcx,qword ptr ss:[rbp+0x38]                                                                  |
+00007FF7F3034E4C | FF15 7E44A502            | call qword ptr ds:[<class QByteArray __cdecl qUncompress(unsigned char const *, int)>]           |

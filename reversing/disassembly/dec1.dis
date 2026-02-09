@@ -1,0 +1,37 @@
+00007FF7F30329A8 | 48:8BF2                  | mov rsi,rdx                                                                                      | input buffer
+00007FF7F30329AB | 4C:8BF1                  | mov r14,rcx                                                                                      |
+00007FF7F30329AE | 48:894C24 30             | mov qword ptr ss:[rsp+0x30],rcx                                                                  |
+00007FF7F30329B3 | 33DB                     | xor ebx,ebx                                                                                      |
+00007FF7F30329B5 | 48:8B02                  | mov rax,qword ptr ds:[rdx]                                                                       |
+00007FF7F30329B8 | 45:33C0                  | xor r8d,r8d                                                                                      |
+00007FF7F30329BB | 8B50 04                  | mov edx,dword ptr ds:[rax+0x4]                                                                   |
+00007FF7F30329BE | 48:8D4C24 20             | lea rcx,qword ptr ss:[rsp+0x20]                                                                  | output buffer
+00007FF7F30329C3 | FF15 FF69A502            | call qword ptr ds:[<public: __cdecl QByteArray::QByteArray(int, char)>]                          |
+00007FF7F30329C9 | 90                       | nop                                                                                              |
+00007FF7F30329CA | 66:0F1F4400 00           | nop word ptr ds:[rax+rax],ax                                                                     |
+00007FF7F30329D0 | 48:8B06                  | mov rax,qword ptr ds:[rsi]                                                                       |
+00007FF7F30329D3 | 8B78 04                  | mov edi,dword ptr ds:[rax+0x4]                                                                   |
+00007FF7F30329D6 | 3BDF                     | cmp ebx,edi                                                                                      |
+00007FF7F30329D8 | 7D 4A                    | jge packettracer.7FF7F3032A24                                                                    |
+00007FF7F30329DA | 8BD7                     | mov edx,edi                                                                                      |
+00007FF7F30329DC | 2BD3                     | sub edx,ebx                                                                                      |
+00007FF7F30329DE | FFCA                     | dec edx                                                                                          |
+00007FF7F30329E0 | 48:8BCE                  | mov rcx,rsi                                                                                      |
+00007FF7F30329E3 | FF15 5773A502            | call qword ptr ds:[<public: char __cdecl QByteArray::at(int) const>]                             |
+00007FF7F30329E9 | 0FB6D0                   | movzx edx,al                                                                                     |
+00007FF7F30329EC | B8 01000000              | mov eax,0x1                                                                                      |
+00007FF7F30329F1 | 2AC3                     | sub al,bl                                                                                        |
+00007FF7F30329F3 | 40:0FBECF                | movsx ecx,dil                                                                                    |
+00007FF7F30329F7 | 0FBEF8                   | movsx edi,al                                                                                     |
+00007FF7F30329FA | 0FAFF9                   | imul edi,ecx                                                                                     |
+00007FF7F30329FD | 40:32FA                  | xor dil,dl                                                                                       |
+00007FF7F3032A00 | 44:8BC3                  | mov r8d,ebx                                                                                      |
+00007FF7F3032A03 | 48:8D5424 40             | lea rdx,qword ptr ss:[rsp+0x40]                                                                  |
+00007FF7F3032A08 | 48:8D4C24 20             | lea rcx,qword ptr ss:[rsp+0x20]                                                                  |
+00007FF7F3032A0D | FF15 0D6AA502            | call qword ptr ds:[<public: class QByteRef __cdecl QByteArray::operator[](int)>]                 |
+00007FF7F3032A13 | 40:0FB6D7                | movzx edx,dil                                                                                    |
+00007FF7F3032A17 | 48:8BC8                  | mov rcx,rax                                                                                      |
+00007FF7F3032A1A | FF15 A868A502            | call qword ptr ds:[<public: class QByteRef & __cdecl QByteRef::operator=(char)>]                 |
+00007FF7F3032A20 | FFC3                     | inc ebx                                                                                          |
+00007FF7F3032A22 | EB AC                    | jmp packettracer.7FF7F30329D0                                                                    |
+00007FF7F3032A24 | 45:8BC7                  | mov r8d,r15d                                                                                     |
