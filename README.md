@@ -60,6 +60,6 @@ Options:
 
 ## Example
 ```bash
-p2x -u -i example.pkt -o example.xml
-p2x -p -i example.xml -o example.pkt
+./p2x -u -i example.pkt -o example.xml
+./p2x -p -i example.xml -o example.pkt
 ```
