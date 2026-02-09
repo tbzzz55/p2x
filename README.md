@@ -19,6 +19,26 @@ chmod +x build-ucrt64.sh
 ./build-ucrt64.sh
 ```
 
+## Download
+<table>
+  <tr>
+    <th>OS</th>
+    <th>Arch</th>
+    <th>Download</th>
+  </tr>
+  <tr>
+    <td>Windows</td>
+    <td>x64</td>
+    <td><a href="https://github.com/tbzzz55/p2x/releases/download/v0.1/p2x_v0.1_windows_x64.exe">Release</a></td>
+  </tr>
+  <tr>
+    <td>Linux</td>
+    <td>x64</td>
+    <td><a href="https://github.com/tbzzz55/p2x/releases/download/v0.1/p2x_v0.1_linux_x64">Release</a></td>
+  </tr>
+</table>
+
+
 ## Usage
 ```bash
 Usage: ./p2x -i <input> -o <output> [-p|-u]
