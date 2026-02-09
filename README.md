@@ -58,7 +58,7 @@ Options:
 ```
 ## Tested
 
-- Cisco Packet Tracer 8.2.2 and 9.0.0
+- Cisco Packet Tracer 8.2.2 and 9.0.0 on Windows 10 (x64)
 
 ## Referrence
 
