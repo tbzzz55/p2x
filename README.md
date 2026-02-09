@@ -21,10 +21,6 @@ The following steps describe the observed decryption pipeline derived from rever
    - Method: `Z_DEFAULT_COMPRESSION`  
    - Output: `decrypted.xml`
 
-## Tested Environment
-
-- Cisco Packet Tracer 8.2.2 and 9.0.0
-
 ## Features
 
 - Unpack `.pkt` → `.xml`
@@ -63,3 +59,6 @@ Options:
 ./p2x -u -i example.pkt -o example.xml
 ./p2x -p -i example.xml -o example.pkt
 ```
+## Tested Environment
+
+- Cisco Packet Tracer 8.2.2 and 9.0.0
