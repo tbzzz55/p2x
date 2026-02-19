@@ -143,9 +143,10 @@ void *twofish_eax_dec(unsigned char *data, unsigned int len, unsigned int *size,
 	if (eax_decrypt_verify_memory(twofish, key, 16, iv, 16, NULL, 0, data, *size, dec, data + len - 16, 16, &res) != CRYPT_OK || res != 1) {
 		free(dec);
 		return NULL;
-	} 
+        }
 	
-	if (unregister_cipher(&twofish_desc) != CRYPT_OK) {
+        if (unregister_cipher(&twofish_desc) != CRYPT_OK) {
+                free(dec);
 		return NULL;
 	}
 	
@@ -177,6 +178,7 @@ void *twofish_eax_enc(unsigned char *data, unsigned int len, unsigned int *size,
 	}
 	
 	if (unregister_cipher(&twofish_desc) != CRYPT_OK) {
+                free(dec);
 		return NULL;
 	}
 	
